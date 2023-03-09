@@ -1,0 +1,86 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+\usepackage[margin=0.75in]{geometry}
+
+\moderncvstyle{banking}
+\moderncvcolor{purple}
+
+\usepackage[utf8]{inputenc}
+
+\name{Devon}{Richards}
+\address{Richardson, Texas}{}{}
+\phone[mobile]{+1 (469) 268-1161}
+\email{botball.devon@gmail.com}
+
+\begin{document}
+	\makecvtitle\label{devon-richards}
+	
+	
+	\section{Professional Experience}\label{experience}
+	
+	\cventry{}{AB InBev}{Senior Machine Learning Engineer}{}{July 2022 -- Present}{\textbf{Technologies:} Python, Tensorflow, Unit-Testing, CI/CD, Pandas \\
+		\cvlistitem{Provided model speedups in excess of 100x.}
+		\cvlistitem{Developed library code that eased migration to Tensorflow 2 and allowed for faster iteration}
+		\cvlistitem{Built a hyperparameter tuning configuration}
+		\cvlistitem{Developed several layers to statistically improve the model's performance.}}
+	
+	
+	\cventry{}{ADT Security}{Mobile CI/CD Engineer}{}{August 2021 -- April 2022}{\textbf{Technologies:} Jenkins, Fastlane, iOS, Android, Gradle, XCode, AppCenter\\
+		\cvlistitem{Updated and maintained a Jenkins instance}
+		\cvlistitem{Created and debugged Jenkins pipelines for a variety of projects for mobile devices.}
+		\cvlistitem{Helped design automated builds and releases gated by the Jenkins pipelines.}
+		\cvlistitem{Monitored error reports from app use in the wild.}}
+
+	\cventry{}{Zemoso}{Software Developer}{}{December 2018 -- December 2020}{\textbf{Technologies:} Java, Swing, Python, Javascript, JMeter, Kubernetes, React-Native, AWS, Android\\
+		\cvlistitem{Migrated and refactored an Android app to MVVM Architecture.}
+		\cvlistitem{Worked on a React Native cross-platform app and native bindings to third party integrations.}
+		\cvlistitem{Tested, analyze, and designed improvements to code and infrastructure so metrics surpassed business requirements.}
+		\cvlistitem{Managed, monitored and tested production deployments using the Elastic Kubernetes service on AWS}}
+	
+	\cventry{}{smartObjx}{Lead Software Developer}{}{August 2017 -- Dec 2018}{\textbf{Technologies:} C\#, Angular, VSTS, Unit-Testing, SQL, RavenDB, Agile\\
+		\cvlistitem{Built and wrote a system for safe database migrations}
+		\cvlistitem{Developed REST API microservices}
+		\cvlistitem{Automated library generation to allow support for several languages with little to no long term overhead}}
+	
+	\cventry{}{Apptimize}{Mobile SDK Developer}{}{December 2015 -- July 2017}{\textbf{Technologies:} A-B-Testing, Android, iOS, Java, Linux, Objective-C, Scrum, Unit-Testing, Continuous-Integration\\
+		\cvlistitem{Built and deployed new features, third party integrations, and bug fixes for Apptimize's A/B and feature flag testing framework}
+		\cvlistitem{Wrote end to end tests for continuous integration adn associated testing procedures.}}
+		
+	\cventry{}{Bumpers}{Speech Engineer}{}{April 2015 -- August 2015}{\textbf{Technologies:} Android, C++11, Cross-Platform, iOS, Linux, Speech-Recognition\\
+		\cvlistitem{Explored the possibility of using speech diatrization in a cross-platform mobile app using the SHoUT library.}
+		\cvlistitem{Built a library using \texttt{kiss\_fft} to separate out blocks of speech}
+		\cvlistitem{Evaluated third party libraries on basis of required dependencies and licensing requirements}}
+	
+	\cventry{}{Fill My Blank}{Mobile Developer}{}{August 2014 -- February 2015}{\textbf{Technologies:} Android, C++, Cross-Platform, iOS, Json, Libcurl, REST\\
+		\cvlistitem{Developed and prepared to deploy a mobile application across multiple platforms}
+		\cvlistitem{Focused on optimizing network traffic and on-device code}}
+	
+	\section{Open Source Work}\label{projects-interests}
+	
+	\cventry{}{\url{https://github.com/CubeArtisan}}{Magic the Gathering: Machine Learning (MtgML)}{}{}{\textbf{Technologies:} Python, Tensorflow, Transformers, NLP, Recommendation\\
+		Designed and implemented several models for predicting the next pick that a human would make in a given Magic the Gathering draft scenario in an arbitrary environment. Also made recommendations for additions and removals to cubes (collections of cards used to draft). Has started work on building decks given a set of cards to choose from, but that is not ready for the public.}
+	
+	\cventry{}{\url{https://github.com/CubeArtisan/mtgdraftbots}}{MtgDraftbots}{}{}{\textbf{Technologies:} Tensorflow, Python, C++, WebAssembly, Typescript\\
+		An earlier iteration of the MtgML models that had a hand written inference engine meant to run on the server or in the browser.}
+	
+	\cventry{}{\url{https://github.com/ruler501/DraftbotOptimization}}{DraftbotOptimization}{}{}{\textbf{Technologies:} C++, CUDA, SYCL, CMA-ES, Black-Box-Optimization\\
+		The first iteration of the MtgML models that didn't use modern machine learning, but rather black box optimization techniques implemented by hand using heterogeneous compute libraries.}
+	
+	\cventry{}{\url{https://github.com/CubeArtisan/cubeartisan}}{CubeArtisan}{}{}{\textbf{Technologies:} Typescript, NodeJS, React, SolidJS, WebSockets\\
+		A website made to help manage Magic the Gathering cubes (collections of cards used for drafting) and provide a bevy of powerful tools from a fully-fledged domain specific filtering language to custom analytics, multiplayer drafting (both synchronous and asynchronous).}
+	
+	\cventry{}{\url{https://github.com/CubeArtisan/cubeartisan-infrastructure}}{CubeArtisan Infrastructure}{}{}{\textbf{Technologies:} Kubernetes, CI/CD\\
+		All the deployment scripts and configurations for building a kubernetes environment that can run CubeArtisan and MtgML from above.}
+	
+		
+	\cventry{}{\url{https://github.com/ruler501/Rationals}}{Mathematics Research Programs}{}{}{\textbf{Technologies:} C++11, HPC, Math, Multithreading\\
+		Built a collection of programs for a variety of tasks for a mathematics research group. Highly optimized and designed to run in parallel on a high performance computing cluster.}
+	
+	\cventry{}{\url{https://github.com/ruler501/ProbSim}}{Probability Simulator}{}{}{\textbf{Technologies:} Probability, Statistics, C++17, Functional-Programming, Templates, Variadic-Function\\
+		Developed a library to handle calculating discrete distributions and transformations on them with a lossless or mildly lossy mode. Could take a transformation that mapped results of a distribution to other values or to new distributions. Highly optimized for fast approximations for any reasonably sized scenario.}
+	
+	\cventry{}{\url{https://github.com/ruler501/retgreen}}{Retrieve Green Autonomous Robot Software}{}{}{\textbf{Technologies:} C++, OpenCV, PID-Controller, Robotics\\	
+		Wrote code to run on a robot designed by my team to search for and pick up poms of a specified color while avoiding getting near those of another specified color. It does this using a PID system and a camera to hone in on the exact position of the pom and grab it.}
+	
+	\cventry{}{\url{https://github.com/ruler501/ckb}}{Corsair Keyboard and Mouse Driver}{}{}{\textbf{Technologies:} C, KissFFT\\
+		Built in two new visual effects on the testing branch of the community Corsair K65/K70/K95/Strafe Driver for Linux and OSX. The new effects were music visualization and a heatmap based on what keys you are using.}
+\end{document}
