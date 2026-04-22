@@ -1,6 +1,6 @@
 %! TeX program = luatex
-\documentclass[11pt,a4paper,sans]{moderncv}
-\usepackage[margin=0.75in]{geometry}
+\documentclass[11pt,letterpaper,sans]{moderncv}
+\usepackage[margin=2cm]{geometry}
 
 \moderncvcolor{purple}
 \moderncvstyle{banking}
@@ -14,16 +14,19 @@
 
 \begin{document}
 	\makecvtitle\label{sabia-richards}
-	
-	
+
+	Software engineer with 10+ years of experience and a proven track record of leading teams to
+	create flexible solutions to complex problems. Bridges between research and testable outputs
+	that efficiently evaluate performance.
+
 	\section{Professional Experience}\label{experience}
 	
-	\cventry{}{AB InBev}{Staff Machine Learning Engineer}{}{July 2022 -- September 2025}{\textbf{Technologies:} Python, Tensorflow, Unit-Testing, CI/CD, C++ \\
+	\cventry{}{AB InBev}{Staff Machine Learning Engineer}{}{July 2022 -- September 2025}{\textbf{Technologies:} Python, Tensorflow, C++23, SIMD \\
 		\cvlistitem{Provided model speedups and memory usage reductions in excess of 100x.}
-		\cvlistitem{Led a team to migrate code to modern frameworks which we could further iterate on sustainably.}
-		\cvlistitem{Embedded mathematical guarantees of business principles in the model architecture of the model greatly improving statistical performance.}
-		\cvlistitem{Built a distributed framework to optimize marketing budgets across multiple axes and constraints with low latency.}
-	    \cvlistitem{Helped develop image stitching and recognition software for use by field technicians using iOS devices.}}
+		\cvlistitem{Led teams migrating to modern frameworks allowing faster iteration and increased sustainably.}
+		\cvlistitem{Embedded mathematical guarantees of business principles in model architecture.}
+		\cvlistitem{Built a distributed framework to optimize marketing budgets across millions of axes with constraints and low latency.}
+	    \cvlistitem{Helped develop image stitching and recognition software for use by field technicians.}}
 	
 	\cventry{}{ADT Security}{Mobile CI/CD Engineer}{}{August 2021 -- April 2022}{\textbf{Technologies:} Jenkins, Fastlane, iOS, Android, Gradle, XCode, AppCenter\\
 		\cvlistitem{Updated and maintained a Jenkins instance}
@@ -34,31 +37,33 @@
 	\cventry{}{Zemoso}{Software Developer}{}{December 2018 -- December 2020}{\textbf{Technologies:} Java, Swing, Python, Javascript, JMeter, Kubernetes, React-Native, AWS, Android\\
 		\cvlistitem{Migrated and refactored an Android app to MVVM Architecture.}
 		\cvlistitem{Worked on a React Native cross-platform app and native bindings to third party integrations.}
-		\cvlistitem{Tested, analyze, and designed improvements to code and infrastructure so metrics surpassed business requirements.}
+		\cvlistitem{Tested, analyzed, and designed improvements to code and infrastructure for metrics to surpass business requirements.}
 		\cvlistitem{Managed, monitored and tested production deployments using the Elastic Kubernetes service on AWS.}}
 	
-	\cventry{}{smartObjx}{Lead Software Developer}{}{August 2017 -- Dec 2018}{\textbf{Technologies:} C\#, Angular, VSTS, Unit-Testing, SQL, RavenDB, Agile\\
+	\cventry{}{smartObjx}{Lead Software Developer}{}{August 2017 -- Dec 2018}{\textbf{Technologies:} C\#, Angular, VSTS, SQL, RavenDB\\
 		\cvlistitem{Built and wrote a system for safe database migrations.}
 		\cvlistitem{Developed REST API microservices.}
 		\cvlistitem{Automated library generation to allow support for several languages with little to no long term overhead.}}
 	
-	\cventry{}{Apptimize}{Mobile SDK Developer}{}{December 2015 -- July 2017}{\textbf{Technologies:} A-B-Testing, Android, iOS, Java, Linux, Objective-C, Scrum, Unit-Testing, Continuous-Integration\\
+	\cventry{}{Apptimize}{Mobile SDK Developer}{}{December 2015 -- July 2017}{\textbf{Technologies:} A-B-Testing, Android, Automation, iOS, Java, Linux, Objective-C, Jenkins\\
 		\cvlistitem{Built and deployed new features, third party integrations, and bug fixes for Apptimize's A/B and feature flag testing framework.}
-		\cvlistitem{Wrote end to end tests for continuous integration adn associated testing procedures.}}
+		\cvlistitem{Wrote end to end tests for continuous integration and associated testing procedures.}}
+
+	\pagebreak
 		
 	\cventry{}{Bumpers}{Speech Engineer}{}{April 2015 -- August 2015}{\textbf{Technologies:} Android, C++11, Cross-Platform, iOS, Linux, Speech-Recognition\\
 		\cvlistitem{Explored the possibility of using speech diatrization in a cross-platform mobile app using the SHoUT library.}
 		\cvlistitem{Built a library using \texttt{kiss\_fft} to separate out blocks of speech.}
 		\cvlistitem{Evaluated third party libraries on basis of required dependencies and licensing requirements.}}
 	
-	\cventry{}{Fill My Blank}{Mobile Developer}{}{August 2014 -- February 2015}{\textbf{Technologies:} Android, C++, Cross-Platform, iOS, Json, Libcurl, REST\\
+	\cventry{}{Fill My Blank}{Mobile Developer}{}{August 2014 -- February 2015}{\textbf{Technologies:} Android, C++, Cross-Platform, iOS\\
 		\cvlistitem{Developed and prepared to deploy a mobile application across multiple platforms.}
 		\cvlistitem{Focused on optimizing network traffic and on-device code.}}
 	
 
 	\section{Open Source Work}\label{projects-interests}
 	
-	\cventry{}{\url{https://github.com/CubeArtisan}}{Magic the Gathering: Machine Learning (MtgML)}{}{}{\textbf{Technologies:} Python, Tensorflow, Transformers, NLP, Recommendation\\
+	\cventry{}{\url{https://github.com/CubeArtisan/mtgml}}{Magic the Gathering: Machine Learning (MtgML)}{}{}{\textbf{Technologies:} Python, Tensorflow, Transformers, NLP, Recommendation\\
 		\cvlistitem{Created several models for predicting the next pick that a player would make in a given Magic the Gathering draft in an arbitrary environment.}
 		\cvlistitem{Built models for recommendations on additions and removals to cubes (collections of cards used for drafts).}
 		\cvlistitem{Tested approaches for model to build decks given the cards to choose from, had some promising results, but could use more research.}}
@@ -83,6 +88,8 @@
 		\cvlistitem{A collection of programs accomplishing a variety of tasks for a mathematics research group.}
 		\cvlistitem{Highly optimized and designed to run in parallel on a high performance computing cluster.}
 		\cvlistitem{Able to utilize heterogenous compute hardware.}}
+
+	\pagebreak
 	
 	\cventry{}{\url{https://github.com/ruler501/ProbSim}}{Probability Simulator}{}{}{\textbf{Technologies:} Probability, Statistics, C++17, Functional-Programming, Templates, Variadic-Function\\
 		\cvlistitem{Developed a library for calculating discrete distributions and transformations on them.}
